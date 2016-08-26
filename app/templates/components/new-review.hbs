@@ -1,0 +1,24 @@
+{{#if newReview}}
+  <div class="different-background">
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        {{input value=username id="username" placeholder=review.username}}
+      </div>
+
+      <div class="form-group">
+        <label for="comment">write your thoughts</label>
+        {{input size="130" value=comment id="comment" placeholder=question.comment}}
+      </div>
+
+      <div class="form-group">
+        <label for="rating">rating</label>
+        {{input value=rating id="rating" placeholder=question.rating}}
+      </div>
+
+      <button {{action 'reviewQuestion'}}>Submit</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn-lg btn-danger" {{action 'newReviewShow'}}>Give Review!</button>
+{{/if}}

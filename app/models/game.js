@@ -5,4 +5,5 @@ export default DS.Model.extend({
   released: DS.attr(),
   average: DS.attr(),
   image: DS.attr(),
+  reviews: DS.hasMany('review', {async:true})
 });

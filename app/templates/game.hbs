@@ -1,1 +1,9 @@
-{{outlet}}
+<h2>{{model.name}}</h2>
+<h3>Realeased: {{model.released}}</h3>
+<img src={{model.image}}>
+
+{{new-review saveReview="saveReview" game=model}}
+
+{{#each model.reviews as |review|}}
+  {{display-review review=review}}
+{{/each}}
