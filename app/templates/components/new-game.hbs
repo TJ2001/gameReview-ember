@@ -1,0 +1,29 @@
+{{#if newGame}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        {{input value=name id="name" placeholder=game.name}}
+      </div>
+
+      <div class="form-group">
+        <label for="released">Released Date</label>
+        {{input value=released id="released" placeholder=game.released}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">cover image URL here</label>
+        {{input value=image id="image" placeholder=game.image}}
+      </div>
+
+      <div class="form-group">
+        <label for="average">average</label>
+        {{input value=average id="average" placeholder=game.average}}
+      </div>
+
+      <button {{action 'submitGame'}}>Submit</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn-danger" {{action 'newGameShow'}}>Subit New Game</button>
+{{/if}}
