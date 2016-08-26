@@ -11,9 +11,11 @@
         {{input size="130" value=comment id="comment" placeholder=question.comment}}
       </div>
 
+      {{input for="rating" type="checkbox" name="isAdmin" checked=isAdmin}}
+
       <div class="form-group">
         <label for="rating">rating</label>
-        {{input value=rating id="rating" placeholder=question.rating}}
+        {{input type="number" min="0" max="5" value=rating id="rating"}}
       </div>
 
       <button {{action 'reviewQuestion'}}>Submit</button>
