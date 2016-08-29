@@ -1,6 +1,7 @@
-{{#each model as |game|}}
-{{#link-to 'game' game.id}}<h2>{{game.name}}</h2>{{/link-to}}
-<h3>Realeased: {{game.released}}</h3>
-{{#link-to 'game' game.id}}<img src={{game.image}}>{{/link-to}}
-<button {{action 'addToFavorite' game}}>Add to Favorite's List</button>
-{{/each}}
+
+  {{#each model as |game|}}
+    {{#link-to 'game' game.id}}<h2>{{game.name}}</h2>{{/link-to}}
+    <h3>Realeased: {{game.released}}</h3>
+    {{#link-to 'game' game.id}}<img src={{game.image}}>{{/link-to}}
+    <button {{action 'addToFavorites' game}}>Add to Favorites</button>
+  {{/each}}

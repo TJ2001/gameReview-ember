@@ -11,7 +11,7 @@ export default Ember.Component.extend({
       var params = {
         username: this.get('username'),
         comment: this.get('comment'),
-        rating: this.get('rating'),
+        rating: parseInt(this.get('rating')),
         game: this.get('game')
       };
       this.set('newReview', false);

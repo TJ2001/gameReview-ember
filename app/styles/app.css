@@ -2,3 +2,65 @@
   width: 100px;
   height: 100px;s
 }
+
+.banner {
+  background-color: black;
+}
+
+.titleStyle {
+  color: white;
+  font-size: 35px;
+}
+
+@media only screen and (min-width:701px) and (max-width: 1137px) {
+  .jumbotron {
+    background-image: url("http://www.killerstartups.com/wp-content/uploads/2014/07/banner.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    margin-bottom: 0;
+    background-color: black;
+  }
+  .jumbotron img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 701px){
+  .jumbotron {
+    background-image: url("http://www.killerstartups.com/wp-content/uploads/2014/07/banner.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 0;
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .jumbotron {
+    background-image: url("http://www.killerstartups.com/wp-content/uploads/2014/07/banner.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 0;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 1137px) {
+  .jumbotron {
+    background-image: url("http://cabertevon.com/wp-content/uploads/2015/02/Banner-Saga-1024x156.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 0;
+    margin: 0 auto;
+    background-color: black;
+  }
+}

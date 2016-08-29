@@ -16,4 +16,5 @@ export function starRating(params) {
       return Ember.String.htmlSafe(star);
   }
 }
+
 export default Ember.Helper.helper(starRating);
