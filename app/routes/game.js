@@ -13,7 +13,6 @@ export default Ember.Route.extend({
       this.transitionTo('game', params.game);
     },
     deleteReview(review) {
-      // console.log("destroyed");
       review.destroyRecord();
     }
   }
