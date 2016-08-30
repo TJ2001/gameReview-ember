@@ -11,6 +11,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         released: this.get('released'),
+        editorRating: parseInt(this.get('editorRating')),
         image: this.get('image'),
         average: this.get('average')
       };

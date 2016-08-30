@@ -3,22 +3,22 @@
     <form>
       <div class="form-group">
         <label for="name">Name</label>
-        {{input value=name id="name" placeholder=game.name}}
+        {{input value=name id="name"}}
       </div>
 
       <div class="form-group">
         <label for="released">Released Date</label>
-        {{input value=released id="released" placeholder=game.released}}
+        {{input value=released id="released"}}
       </div>
 
       <div class="form-group">
         <label for="image">cover image URL here</label>
-        {{input value=image id="image" placeholder=game.image}}
+        {{input value=image id="image"}}
       </div>
 
       <div class="form-group">
-        <label for="average">average</label>
-        {{input value=average id="average" placeholder=game.average}}
+        <label for="editorRating">Editor's Rating:</label>
+        {{input value=editorRating id="editorRating" type="number" min="0" max="5"}}
       </div>
 
       <button {{action 'submitGame'}}>Submit</button>

@@ -1,3 +1,4 @@
+
 import Ember from 'ember';
 
 export default Ember.Component.extend({
@@ -7,7 +8,7 @@ export default Ember.Component.extend({
       this.set('newReview', true);
     },
 
-    reviewQuestion(){
+    reviewGame(){
       var params = {
         username: this.get('username'),
         comment: this.get('comment'),

@@ -3,20 +3,20 @@
     <form>
       <div class="form-group">
         <label for="username">Username</label>
-        {{input value=username id="username" placeholder=review.username}}
+        {{input value=username id="username"}}
       </div>
 
       <div class="form-group">
         <label for="comment">write your thoughts</label>
-        {{input size="130" value=comment id="comment" placeholder=question.comment}}
+        {{input size="130" value=comment id="comment"}}
       </div>
-      
+
       <div class="form-group">
         <label for="rating">rating</label>
         {{input type="number" min="0" max="5" value=rating id="rating"}}
       </div>
 
-      <button {{action 'reviewQuestion'}}>Submit</button>
+      <button {{action 'reviewGame'}}>Submit</button>
     </form>
   </div>
 {{else}}

@@ -7,6 +7,10 @@
   background-color: black;
 }
 
+.font-color {
+  color: red;
+}
+
 .titleStyle {
   color: white;
   font-size: 35px;
